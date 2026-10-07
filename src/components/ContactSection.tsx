@@ -35,6 +35,7 @@ export default function ContactSection({ onOpenResume }: ContactSectionProps) {
   const [copiedPhone, setCopiedPhone] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const copyEmail = () => {
     navigator.clipboard.writeText(PERSONAL_INFO.email);
@@ -63,23 +64,52 @@ export default function ContactSection({ onOpenResume }: ContactSectionProps) {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
 
     setIsSubmitting(true);
+    setSubmitError(null);
     playMicroClick();
 
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      playCelebrationSound();
-      confetti({
-        particleCount: 120,
-        spread: 80,
-        origin: { y: 0.5 },
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/swainabinash36@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          _subject: `Portfolio Inquiry: ${formData.subject || "Direct Message"} - from ${formData.name}`,
+          message: formData.message,
+          _template: "table",
+          _captcha: "false",
+        }),
       });
-    }, 1000);
+
+      const data = await response.json();
+
+      if (response.ok && (data.success === "true" || data.success === true)) {
+        setIsSubmitted(true);
+        playCelebrationSound();
+        confetti({
+          particleCount: 120,
+          spread: 80,
+          origin: { y: 0.5 },
+        });
+      } else {
+        throw new Error(data.message || "Failed to transmit message.");
+      }
+    } catch (err: unknown) {
+      console.error("Form submission error:", err);
+      setSubmitError(
+        "Could not send automatically. Please reach out directly via email at swainabinash36@gmail.com or WhatsApp."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -266,23 +296,41 @@ export default function ContactSection({ onOpenResume }: ContactSectionProps) {
                     <Check className="w-6 h-6" />
                   </div>
                   <h4 className="text-base font-bold text-[var(--color-text)]">
-                    Thank you! Message Received
+                    Thank you! Message Transmitted
                   </h4>
                   <p className="text-xs text-[var(--color-text-muted)] max-w-sm mx-auto">
-                    Your note has been queued. I will review and reply to your provided email address promptly.
+                    Your message has been delivered to <span className="text-[var(--color-text)] font-semibold font-mono">swainabinash36@gmail.com</span>. I will review and reply promptly!
                   </p>
                   <button
                     onClick={() => {
                       setIsSubmitted(false);
                       setFormData({ name: "", email: "", subject: "", message: "" });
                     }}
-                    className="text-xs text-[var(--color-primary)] font-semibold underline mt-2"
+                    className="text-xs text-[var(--color-primary)] font-semibold underline mt-2 inline-block"
                   >
                     Send another note
                   </button>
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
+                  {submitError && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="p-3.5 rounded-xl bg-red-500/10 border border-red-500/30 text-xs text-red-400 text-left"
+                    >
+                      <p>{submitError}</p>
+                      <a
+                        href={`mailto:${PERSONAL_INFO.email}?subject=${encodeURIComponent(
+                          formData.subject || "Portfolio Inquiry"
+                        )}&body=${encodeURIComponent(formData.message)}`}
+                        className="underline text-[var(--color-primary)] font-semibold mt-1 inline-block"
+                      >
+                        Click here to send via your email client
+                      </a>
+                    </motion.div>
+                  )}
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-mono uppercase tracking-wider text-[var(--color-text-muted)] mb-1.5">
@@ -346,7 +394,10 @@ export default function ContactSection({ onOpenResume }: ContactSectionProps) {
                     className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-[var(--color-primary)] text-[var(--color-highlight)] font-semibold text-xs shadow-lg shadow-[var(--color-glow)] hover:bg-[var(--color-primary-hover)] transition-all hover:scale-[1.01] active:scale-[0.99] disabled:opacity-50"
                   >
                     {isSubmitting ? (
-                      <span>Transmitting Message...</span>
+                      <span className="flex items-center gap-2">
+                        <span className="w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                        Transmitting to Abinash...
+                      </span>
                     ) : (
                       <>
                         <Send className="w-4 h-4" />
