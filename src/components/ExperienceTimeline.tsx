@@ -34,7 +34,7 @@ export default function ExperienceTimeline() {
             Work Experience & <span className="text-[var(--color-primary)]">Proven Impact</span>
           </h2>
           <p className="mt-4 text-sm sm:text-base text-[var(--color-text-muted)] max-w-2xl">
-            2+ years delivering production code for enterprise SaaS, multi-platform healthcare ecosystems, and high-conversion EdTech portals.
+            3+ years delivering production code for enterprise SaaS, multi-platform healthcare ecosystems, and high-conversion EdTech portals.
           </p>
         </div>
 

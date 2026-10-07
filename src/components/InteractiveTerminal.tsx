@@ -74,7 +74,7 @@ export default function InteractiveTerminal({ onOpenResume }: { onOpenResume: ()
           <div className="text-[11px] text-[var(--color-text)] space-y-1">
             <p className="font-bold text-[var(--color-primary)]">Abinash Swain — Full Stack Systems Architect</p>
             <p className="text-[var(--color-text-muted)] leading-relaxed">
-              2+ years experience building production healthcare ecosystems (Swastyam B2C - 10k+ users), high-throughput SaaS (Email Extractor - 50k+ records/day), and published open-source developer tooling (@abinashswain/node-developer-toolkit).
+              3+ years experience building production healthcare ecosystems (Swastyam B2C - 10k+ users), high-throughput SaaS (Email Extractor - 50k+ records/day), and published open-source developer tooling (@abinashswain/node-developer-toolkit).
             </p>
           </div>
         );

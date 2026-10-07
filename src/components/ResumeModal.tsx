@@ -64,7 +64,7 @@ Notice Period: Immediate Joiner (15 Days)
 LinkedIn: ${PERSONAL_INFO.socials.linkedin} | GitHub: ${PERSONAL_INFO.socials.github}
 
 SUMMARY:
-Senior Full Stack Engineer with 2+ years of production experience architecting high-throughput distributed systems, healthcare ecosystems, and enterprise web applications.
+Senior Full Stack Engineer with 3+ years of production experience architecting high-throughput distributed systems, healthcare ecosystems, and enterprise web applications.
 
 EXPERIENCE:
 - Freelance Full Stack Developer (Aug 2026 - Present) | JavaTechnocrat

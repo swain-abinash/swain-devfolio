@@ -8,7 +8,7 @@ export const PERSONAL_INFO = {
   email: "swainabinash36@gmail.com",
   phone: "+91 6370083077",
   noticePeriod: "Immediate Joiner (15 Days Notice)",
-  experienceYears: "2+ Years",
+  experienceYears: "3+ Years",
   socials: {
     github: "https://github.com/swain-abinash",
     linkedin: "https://linkedin.com/in/swain-abinash",
@@ -17,7 +17,7 @@ export const PERSONAL_INFO = {
   },
   resumeUrl: "/Abinash_Swain_Resume.pdf",
   profilePhoto: "/images/abinash-swain.png",
-  bio: "Senior Full Stack Engineer with 2+ years of production experience architecting high-throughput distributed systems, healthcare ecosystems, and enterprise web applications. Specialized in bridging responsive frontend craft with resilient Node.js microservices, low-latency Redis caching, and automated cloud deployments.",
+  bio: "Senior Full Stack Engineer with 3+ years of production experience architecting high-throughput distributed systems, healthcare ecosystems, and enterprise web applications. Specialized in bridging responsive frontend craft with resilient Node.js microservices, low-latency Redis caching, and automated cloud deployments.",
 };
 
 export const THEMES: Record<string, ThemeConfig> = {
@@ -119,7 +119,7 @@ export const THEMES: Record<string, ThemeConfig> = {
 };
 
 export const METRICS = [
-  { label: "Production Experience", value: "2+", suffix: " Years" },
+  { label: "Production Experience", value: "3+", suffix: " Years" },
   { label: "Registered Healthcare Users", value: "10k+", suffix: " Users" },
   { label: "Daily Data Records Processed", value: "50k+", suffix: " / Day" },
   { label: "Production System Uptime", value: "99.9", suffix: "%" },

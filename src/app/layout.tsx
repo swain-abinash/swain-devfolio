@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://abinashswain.dev"),
   title: "Abinash Swain | Senior Full Stack Developer & Systems Architect",
   description:
-    "Portfolio of Abinash Swain — Full Stack Engineer specializing in React.js, Next.js, Node.js, GCP, MariaDB, Redis, and Event-Driven Microservices. 2+ years production experience in high-concurrency systems and healthcare platforms.",
+    "Portfolio of Abinash Swain — Full Stack Engineer specializing in React.js, Next.js, Node.js, GCP, MariaDB, Redis, and Event-Driven Microservices. 3+ years production experience in high-concurrency systems and healthcare platforms.",
   keywords: [
     "Abinash Swain",
     "Full Stack Developer",

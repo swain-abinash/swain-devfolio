@@ -69,7 +69,7 @@ export default function AboutSection() {
                 My engineering path began with a deep appreciation for fluid, responsive user interfaces in React, Next.js, and TypeScript. But building products like the <strong className="text-[var(--color-text)]">Swastyam Healthcare Platform</strong> and <strong className="text-[var(--color-text)]">Email Extractor SaaS</strong> quickly exposed the crucial reality: frontends are only as strong as the distributed backends and database architectures that power them.
               </p>
               <p>
-                Over the past 2+ years, I transitioned deliberately toward full-stack engineering: designing normalized relational schemas in MariaDB/PostgreSQL, engineering low-latency Redis cache-aside layers, setting up Docker multi-stage containers, and automating GitHub Actions CI/CD pipelines that slash release cycles from 3 days down to 4 hours.
+                Over the past 3+ years, I transitioned deliberately toward full-stack engineering: designing normalized relational schemas in MariaDB/PostgreSQL, engineering low-latency Redis cache-aside layers, setting up Docker multi-stage containers, and automating GitHub Actions CI/CD pipelines that slash release cycles from 3 days down to 4 hours.
               </p>
               <p>
                 Whether developing cross-platform mobile apps in React Native CLI, publishing open-source libraries like <code className="text-xs font-mono text-[var(--color-primary)] bg-[var(--color-surface)] px-1.5 py-0.5 rounded border border-[var(--color-border)]">@abinashswain/node-developer-toolkit</code>, or managing NGINX reverse proxies on Linux VPS, I strive for clean architecture, bulletproof uptime, and exceptional speed.
