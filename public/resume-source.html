@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Abinash Swain - Resume</title>
+  <style>
+    @page {
+      size: letter;
+      margin: 8mm 11mm 8mm 11mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      color: #000000;
+      line-height: 1.22;
+      font-size: 9pt;
+      background: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      width: 100%;
+      height: 260mm;
+      max-height: 260mm;
+      position: relative;
+      page-break-after: always;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .page:last-child {
+      page-break-after: avoid;
+    }
+    .content {
+      flex: 1;
+    }
+    .page-footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 7.5pt;
+      color: #333333;
+      border-top: 0.5pt solid #999999;
+      padding-top: 2px;
+      margin-top: 4px;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 4px;
+    }
+    .header h1 {
+      font-size: 15pt;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      margin-bottom: 1.5px;
+      color: #000000;
+    }
+    .header .meta-line {
+      font-size: 8.5pt;
+      margin-bottom: 1.5px;
+    }
+    .header .contact-line {
+      font-size: 8.5pt;
+      color: #000000;
+    }
+    .header a {
+      color: #0000ee;
+      text-decoration: underline;
+    }
+
+    /* Section Headings */
+    .section-title {
+      font-size: 9.5pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      border-bottom: 0.8pt solid #000000;
+      padding-bottom: 1px;
+      margin-top: 5px;
+      margin-bottom: 3px;
+      color: #000000;
+    }
+
+    /* Experience & Project Blocks */
+    .block {
+      margin-bottom: 4px;
+    }
+    .block-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: bold;
+      font-size: 9pt;
+    }
+    .block-sub {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-style: italic;
+      font-size: 8.5pt;
+      color: #111111;
+      margin-bottom: 1px;
+    }
+    .block-meta {
+      font-size: 8.2pt;
+      color: #111111;
+      margin-bottom: 1.5px;
+      line-height: 1.2;
+    }
+    .block-meta span.label {
+      font-weight: bold;
+    }
+
+    /* Bullet list */
+    ul.bullets {
+      list-style-type: disc;
+      padding-left: 13px;
+      margin-top: 1px;
+      margin-bottom: 2px;
+    }
+    ul.bullets li {
+      margin-bottom: 1.5px;
+      font-size: 8.3pt;
+      line-height: 1.2;
+      text-align: justify;
+    }
+
+    /* Skills */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1px;
+    }
+    .skills-table td {
+      padding: 1px 0;
+      font-size: 8.2pt;
+      vertical-align: top;
+      line-height: 1.22;
+    }
+    .skills-table td.label {
+      font-weight: bold;
+      white-space: nowrap;
+      padding-right: 4px;
+      width: 1%;
+    }
+
+    /* Links in projects */
+    a.link {
+      color: #0000ee;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1 -->
+  <div class="page">
+    <div class="content">
+      <!-- HEADER -->
+      <div class="header">
+        <h1>ABINASH SWAIN</h1>
+        <div class="meta-line">
+          <strong>Address:</strong> Bangalore, India &nbsp;|&nbsp; <strong>Immediate Joiner (Notice Period: 15 Days)</strong>
+        </div>
+        <div class="contact-line">
+          +91 6370083077 &nbsp;|&nbsp; 
+          <a href="mailto:swainabinash36@gmail.com">swainabinash36@gmail.com</a> &nbsp;|&nbsp; 
+          <a href="https://linkedin.com/in/swain-abinash">linkedin.com/in/swain-abinash</a> &nbsp;|&nbsp; 
+          <a href="https://github.com/swain-abinash">github.com/swain-abinash</a>
+        </div>
+      </div>
+
+      <!-- EMPLOYMENT EXPERIENCE -->
+      <div class="section-title">EMPLOYMENT EXPERIENCE</div>
+
+      <!-- Experience 1 -->
+      <div class="block">
+        <div class="block-header">
+          <span>Freelance Full Stack Developer</span>
+          <span>August 2026 – Present</span>
+        </div>
+        <div class="block-sub">
+          <span>Self-Employed / Independent Consultant</span>
+          <span></span>
+        </div>
+        <div class="block-meta">
+          <span class="label">Domain:</span> EdTech &amp; Modern Web Platforms<br/>
+          <span class="label">Clients:</span> JavaTechnocrat (Learning Institution)<br/>
+          <span class="label">Projects:</span> JavaTechnocrat Official Web Platform (<a href="https://javatechnocrat.in" class="link">javatechnocrat.in</a>)
+        </div>
+        <div class="block-meta"><span class="label">Responsibilities:</span></div>
+        <ul class="bullets">
+          <li>Designed and engineered a fully responsive modern web platform for JavaTechnocrat using React.js, TypeScript, and Tailwind CSS, serving <strong>5,000+ monthly active student visitors</strong>.</li>
+          <li>Integrated secure <strong>Razorpay payment gateway</strong> processing online course enrollments and tuition fee collections with automated dynamic invoice/receipt generation.</li>
+          <li>Architected production cloud deployment hosted on Vercel with custom DNS routing, SSL certificates, and domain management via GoDaddy, maintaining <strong>99.9% uptime</strong>.</li>
+        </ul>
+      </div>
+
+      <!-- Experience 2 -->
+      <div class="block">
+        <div class="block-header">
+          <span>Software Developer (June 2025 – July 2026) [Promoted]</span>
+          <span></span>
+        </div>
+        <div class="block-sub">
+          <span>Software Developer Trainee (June 2024 – May 2025)</span>
+          <span></span>
+        </div>
+        <div class="block-header" style="font-weight: normal; font-size: 8.8pt; margin-top: 1px;">
+          <span><strong>Mindcys Consultancy Pvt. Ltd.</strong></span>
+          <span><strong>June 2024 – July 2026 (2 Years Exp)</strong></span>
+        </div>
+        <div class="block-meta">
+          <span class="label">Domain:</span> Healthcare, Diagnostic Systems &amp; Enterprise SaaS<br/>
+          <span class="label">Clients / Products:</span> Swastyam Healthcare Platform, Diagnostic Lab Ecosystem<br/>
+          <span class="label">Projects:</span> Swastyam (B2C Healthcare Platform), Lab Management System (Diagnostic Ecosystem)
+        </div>
+        <div class="block-meta"><span class="label">Responsibilities:</span></div>
+        <ul class="bullets">
+          <li><strong>Promoted to Software Developer after Year 1</strong> following proven technical ownership in full-stack architecture, API optimization, and CI/CD pipelines.</li>
+          <li>Spearheaded full-stack development for Swastyam B2C platform and Lab Management Ecosystem using React.js, Tailwind CSS, Node.js, and Express.js, serving <strong>10,000+ registered users</strong>.</li>
+          <li>Engineered diagnostic workflow handling <strong>300+ daily sample collections</strong> across in-lab visits and home pickups with real-time transit tracking for <strong>15+ field collectors</strong>.</li>
+          <li>Built multi-tier RBAC security governing handoffs between Lab Collectors, Lab Assistants processing <strong>1,000+ daily test parameters</strong>, and reviewing doctors.</li>
+          <li>Configured automated GitHub Actions CI/CD workflows for automated testing (Jest/Supertest) and zero-downtime deployments, reducing release cycles from <strong>3 days to 4 hours</strong>.</li>
+          <li>Designed normalized MariaDB schemas, implemented Redis caching layers, and tuned SQL queries with B-tree indexing to <strong>improve API latency by 45% under 1,000+ concurrent requests</strong>.</li>
+        </ul>
+      </div>
+
+      <!-- Experience 3 -->
+      <div class="block">
+        <div class="block-header">
+          <span>Junior Programmer</span>
+          <span>June 2023 – May 2024</span>
+        </div>
+        <div class="block-sub">
+          <span>Juvenilia Technology Pvt. Ltd.</span>
+          <span></span>
+        </div>
+        <div class="block-meta">
+          <span class="label">Domain:</span> Web Applications, B2B SaaS &amp; Automation<br/>
+          <span class="label">Clients:</span> Corporate Portals, B2B Lead Generation Platforms<br/>
+          <span class="label">Projects:</span> Corporate Web Portal, Email Extractor (B2B Lead Generation SaaS)
+        </div>
+        <div class="block-meta"><span class="label">Responsibilities:</span></div>
+        <ul class="bullets">
+          <li>Designed and deployed official company portal using React.js, TypeScript, and Tailwind CSS, achieving <strong>95+ Google Lighthouse scores</strong> and 100% responsive cross-device layout.</li>
+          <li>Engineered Email Extractor SaaS application using React.js, Node.js, and MariaDB for automated web data scraping, processing <strong>50,000+ lead records daily</strong>.</li>
+          <li>Implemented sliding-window rate limiting, bulk deduplication logic, and asynchronous background queues handling batches of <strong>10,000+ records</strong> without system degradation.</li>
+          <li>Managed backend hosting on Linux VPS, database query indexing, NGINX reverse proxy, SSL termination, and PM2 cluster management ensuring <strong>99.9% uptime</strong>.</li>
+        </ul>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="section-title">SKILLS</div>
+      <table class="skills-table">
+        <tr>
+          <td class="label">Programming Languages:</td>
+          <td>JavaScript (ES6+), TypeScript, Python, SQL, HTML5, CSS3.</td>
+        </tr>
+        <tr>
+          <td class="label">Frameworks:</td>
+          <td>React.js, React Native CLI, Next.js, Node.js, Express.js, Redux, Redux Saga, TanStack Query, Tailwind CSS, shadcn/ui.</td>
+        </tr>
+        <tr>
+          <td class="label">Developer Tools:</td>
+          <td>Docker, Docker Compose, AWS (EC2, S3, CloudFront, IAM), Vercel, CI/CD (GitHub Actions), NGINX, Linux Shell (Bash), PM2, Git, Vite.</td>
+        </tr>
+        <tr>
+          <td class="label">Libraries:</td>
+          <td>tsup, Vitest, Jest, Supertest, Winston, Sentry, Prisma ORM, Formik, Yup, Zod, Postman.</td>
+        </tr>
+        <tr>
+          <td class="label">Databases:</td>
+          <td>MariaDB, PostgreSQL, MySQL, MongoDB, Redis (Cache-Aside).</td>
+        </tr>
+        <tr>
+          <td class="label">Expertise:</td>
+          <td>Microservices Architecture, Distributed Systems, RESTful APIs, Event-Driven Architecture (RabbitMQ), WebSockets, RBAC Security, Razorpay, Open-Source npm Publishing.</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="page-footer">
+      <span>Abinash Swain — Full Stack Developer</span>
+      <span>Page 1 of 2</span>
+    </div>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="page">
+    <div class="content">
+      <!-- FEATURED PROJECTS -->
+      <div class="section-title" style="margin-top: 0;">FEATURED PROJECTS</div>
+
+      <!-- Project 1 -->
+      <div class="block">
+        <div class="block-header">
+          <span>SWASTYAM — B2C HEALTHCARE PLATFORM</span>
+        </div>
+        <div class="block-meta">
+          <span class="label">Domain / Platform:</span> Live Production Product &bull; Web, Android, iOS<br/>
+          <span class="label">Links:</span> Play Store: <a href="https://play.google.com/store/apps/details?id=com.swastyam" class="link">play.google.com/store/apps/details?id=com.swastyam</a> | App Store: <a href="https://apps.apple.com/in/app/swastyam/id6759480939" class="link">apps.apple.com/in/app/swastyam/id6759480939</a>
+        </div>
+        <div class="block-meta"><span class="label">Responsibilities / Key Deliverables:</span></div>
+        <ul class="bullets">
+          <li><strong>Core Healthcare Ecosystem:</strong> Engineered a live multi-platform B2C application supporting <strong>10,000+ registered patients</strong>, dynamic doctor slot scheduling, clinic/pharmacy bookings, and secure Razorpay payment gateway integration.</li>
+          <li><strong>Telehealth &amp; Interoperability:</strong> Built low-bandwidth resilient WebRTC video consultations (&lt;256 kbps) and managed HL7/FHIR-aware data structures for seamless lab reports and digital prescription exchanges.</li>
+          <li><strong>Security &amp; Compliance:</strong> Architected secure handling of Protected Health Information (PHI) across <strong>50+ REST endpoints</strong>, fully aligned with India's DPDP Act and ABDM guidelines.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="block">
+        <div class="block-header">
+          <span>LAB MANAGEMENT SYSTEM — DIAGNOSTIC ECOSYSTEM</span>
+        </div>
+        <div class="block-meta">
+          <span class="label">Domain / Stack:</span> Healthcare &amp; Diagnostic SaaS &bull; React.js, Tailwind CSS, Node.js, Express.js, MariaDB, WebSockets, RBAC
+        </div>
+        <div class="block-meta"><span class="label">Responsibilities / Key Deliverables:</span></div>
+        <ul class="bullets">
+          <li><strong>Sample Collection Workflow:</strong> Developed end-to-end appointment booking for in-lab visits and home pickups, processing <strong>300+ daily sample requests</strong> with automated time-slot allocation.</li>
+          <li><strong>Dedicated Field App:</strong> Built dedicated Lab Collector interface enabling <strong>15+ field agents</strong> to accept collection requests, record barcode IDs, and update transit status in real time.</li>
+          <li><strong>Role-Based Processing:</strong> Engineered multi-tier RBAC workflow where Lab Assistants receive samples, log results across <strong>1,000+ daily test parameters</strong>, and route reports to doctors for sign-off.</li>
+        </ul>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="block">
+        <div class="block-header">
+          <span>EMAIL EXTRACTOR — B2B UTILITY SAAS</span>
+        </div>
+        <div class="block-meta">
+          <span class="label">Domain / Stack:</span> B2B SaaS &amp; Automation &bull; JavaScript (ES6+), React.js, Node.js, MariaDB, Redis, PM2
+        </div>
+        <div class="block-meta"><span class="label">Responsibilities / Key Deliverables:</span></div>
+        <ul class="bullets">
+          <li><strong>Extraction Engine &amp; Lead Processing:</strong> Developed full-stack SaaS for automated lead generation processing <strong>50,000+ records daily</strong> with queue throttling, email deduplication logic, per-account tenant isolation, and bulk CSV export.</li>
+        </ul>
+      </div>
+
+      <!-- PERSONAL PROJECTS -->
+      <div class="section-title">PERSONAL PROJECTS</div>
+
+      <!-- Personal Project 1 -->
+      <div class="block">
+        <div class="block-header">
+          <span>NODE.JS DEVELOPER TOOLKIT — OPEN SOURCE NPM PACKAGE</span>
+        </div>
+        <div class="block-meta">
+          <span class="label">Tech Stack:</span> TypeScript, Node.js, Express, tsup (ESBuild), Vitest, GitHub Actions (CI/CD)<br/>
+          <span class="label">Links:</span> npm: <a href="https://npmjs.com/package/@abinashswain/node-developer-toolkit" class="link">npmjs.com/package/@abinashswain/node-developer-toolkit</a> | github: <a href="https://github.com/swain-abinash/node-developer-toolkit" class="link">github.com/swain-abinash/node-developer-toolkit</a>
+        </div>
+        <div class="block-meta"><span class="label">Responsibilities / Key Deliverables:</span></div>
+        <ul class="bullets">
+          <li><strong>Engineered &amp; Published Library:</strong> Developed and published <code>@abinashswain/node-developer-toolkit</code> on npm, providing standardized API response formatting, operational error handling, structured logging, safe pagination, and declarative schema validation with zero runtime dependencies.</li>
+          <li><strong>Dual ESM &amp; CommonJS Architecture:</strong> Built high-performance dual bundle distribution (.js &amp; .cjs) using tsup and TypeScript 5.7+ with subpath exports enabling tree-shaking and automated .d.ts type generation.</li>
+          <li><strong>Testing &amp; CI/CD Pipelines:</strong> Implemented Vitest automated test suite with <strong>64 test cases (90%+ statement &amp; branch coverage)</strong> and multi-version Node.js (v18, v20, v22) matrix release automation via GitHub Actions.</li>
+        </ul>
+      </div>
+
+      <!-- Personal Project 2 -->
+      <div class="block">
+        <div class="block-header">
+          <span>SCALABLE E-COMMERCE ORDER &amp; PAYMENT PLATFORM</span>
+        </div>
+        <div class="block-meta">
+          <span class="label">Stack &amp; Architecture:</span> Distributed Backend Microservices &bull; Node.js, Express.js, TypeScript, MariaDB, Redis, RabbitMQ, Docker, NGINX
+        </div>
+        <div class="block-meta"><span class="label">Responsibilities / Key Deliverables:</span></div>
+        <ul class="bullets">
+          <li><strong>Microservices &amp; API Versioning:</strong> Architected decoupled microservices (Auth, Catalog, Order, Payment, Inventory, Notification) with strict REST API versioning (v1/v2) and centralized validation middleware.</li>
+          <li><strong>Event-Driven Messaging &amp; Caching:</strong> Designed RabbitMQ messaging with worker queues, acknowledgments (ACK/NACK), and Dead Letter Queues (DLQ); implemented Redis cache-aside caching (cutting DB queries by 70%) and NGINX Layer-7 load balancing under 1,000+ RPM.</li>
+        </ul>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="section-title">EDUCATION</div>
+      <div class="block">
+        <div class="block-header">
+          <span>Biju Patnaik University of Technology, Odisha</span>
+        </div>
+        <div class="block-sub">
+          <span>Bachelor of Technology in Computer Science &amp; Engineering | August 2020 – July 2024</span>
+          <span><strong>CGPA - 8.00+</strong></span>
+        </div>
+      </div>
+
+      <!-- ACHIEVEMENTS AND AWARDS -->
+      <div class="section-title">ACHIEVEMENTS AND AWARDS</div>
+      <ul class="bullets">
+        <li><strong>Production Healthcare Platform:</strong> Successfully engineered and deployed Swastyam live on Web, Google Play Store, and Apple App Store, serving <strong>10,000+ users</strong>.</li>
+        <li><strong>Open-Source &amp; Commercial Launches:</strong> Published <code>@abinashswain/node-developer-toolkit</code> on npm and deployed JavaTechnocrat (<a href="https://javatechnocrat.in" class="link">javatechnocrat.in</a>).</li>
+        <li><strong>CI/CD Pipeline Velocity &amp; Latency:</strong> Accelerated release turnaround by <strong>60%</strong> via GitHub Actions CI/CD and improved API latency by <strong>45%</strong>.</li>
+      </ul>
+
+      <!-- CERTIFICATIONS -->
+      <div class="section-title">CERTIFICATIONS</div>
+      <div style="font-size: 8.2pt; line-height: 1.25; margin-top: 1px;">
+        &bull; <strong>HackerRank - Node.js (Intermediate)</strong> - September 2026 &nbsp;|&nbsp; 
+        &bull; <strong>HackerRank - SQL (Advanced)</strong> - January 2024 &nbsp;|&nbsp; 
+        &bull; <strong>HackerRank - React (Intermediate)</strong> - January 2024 &nbsp;|&nbsp; 
+        &bull; <strong>HackerRank - JavaScript (Basic &amp; Intermediate)</strong> - August 2023
+      </div>
+
+      <!-- LANGUAGES -->
+      <div class="section-title">LANGUAGES</div>
+      <div style="font-size: 8.2pt; line-height: 1.25; margin-top: 1px;">
+        <strong>English:</strong> Professional Working Proficiency &nbsp;|&nbsp; 
+        <strong>Hindi:</strong> Full Professional Proficiency &nbsp;|&nbsp; 
+        <strong>Odia:</strong> Native / Bilingual Proficiency
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>Abinash Swain — Full Stack Developer</span>
+      <span>Page 2 of 2</span>
+    </div>
+  </div>
+
+</body>
+</html>
