@@ -5,17 +5,14 @@ import { motion } from "framer-motion";
 import {
   GraduationCap,
   Award,
-  Languages,
   Zap,
   ShieldCheck,
   Cpu,
   Layers,
   CheckCircle2,
-  ExternalLink,
   Sparkles,
 } from "lucide-react";
 import { EDUCATION, CERTIFICATIONS, LANGUAGES } from "@/data/portfolioData";
-import { playMicroClick } from "@/lib/sound";
 
 const PRINCIPLES = [
   {

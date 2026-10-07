@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 import { useTheme } from "@/context/ThemeContext";
 import { PERSONAL_INFO } from "@/data/portfolioData";
-import { toggleSound, isSoundEnabled, playMicroClick } from "@/lib/sound";
+import { toggleSound, playMicroClick } from "@/lib/sound";
 
 interface NavbarProps {
   onOpenCommandPalette: () => void;

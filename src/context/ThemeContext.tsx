@@ -40,27 +40,26 @@ function applyThemeToDOM(id: ThemeId) {
 }
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [themeId, setThemeId] = useState<ThemeId>("earth-graphite");
+  const [themeId, setThemeId] = useState<ThemeId>(() => {
+    if (typeof window !== "undefined") {
+      try {
+        const saved = localStorage.getItem("portfolio_theme") as ThemeId;
+        if (saved && THEMES[saved]) return saved;
+      } catch {
+        // ignore
+      }
+    }
+    return "earth-graphite";
+  });
 
   useEffect(() => {
-    try {
-      const savedTheme = localStorage.getItem("portfolio_theme") as ThemeId;
-      if (savedTheme && THEMES[savedTheme]) {
-        setThemeId(savedTheme);
-        applyThemeToDOM(savedTheme);
-        return;
-      }
-    } catch {
-      // ignore
-    }
-    applyThemeToDOM("earth-graphite");
-  }, []);
+    applyThemeToDOM(themeId);
+  }, [themeId]);
 
   const handleSetTheme = (id: ThemeId) => {
     if (THEMES[id]) {
       playThemeSwitchSound();
       setThemeId(id);
-      applyThemeToDOM(id);
     }
   };
 

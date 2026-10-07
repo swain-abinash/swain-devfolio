@@ -8,11 +8,8 @@ import {
   Server,
   FileCode2,
   Cloud,
-  Box,
   Terminal,
   Zap,
-  Activity,
-  Sparkles,
 } from "lucide-react";
 import { playMicroClick } from "@/lib/sound";
 

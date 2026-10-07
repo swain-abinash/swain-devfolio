@@ -11,7 +11,6 @@ import {
   Check,
   Copy,
   Sparkles,
-  ExternalLink,
   MessageSquare,
   Clock,
 } from "lucide-react";

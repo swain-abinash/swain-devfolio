@@ -1,13 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   Sparkles,
-  ArrowDown,
-  Layers,
   Cpu,
-  Database,
   Cloud,
   Box,
   GitBranch,
@@ -15,11 +12,8 @@ import {
   ShieldCheck,
   Zap,
   Info,
-  Server,
-  Network,
   Play,
   CheckCircle2,
-  X,
 } from "lucide-react";
 import { ARCHITECTURE_NODES } from "@/data/portfolioData";
 import { ArchitectureNode } from "@/types/portfolio";

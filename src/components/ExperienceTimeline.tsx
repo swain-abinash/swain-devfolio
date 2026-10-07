@@ -3,15 +3,12 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  Briefcase,
   Calendar,
   MapPin,
   TrendingUp,
   Sparkles,
   ChevronDown,
   CheckCircle2,
-  Cpu,
-  Layers,
 } from "lucide-react";
 import { EXPERIENCES } from "@/data/portfolioData";
 import { playMicroClick } from "@/lib/sound";
