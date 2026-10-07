@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { Terminal as TerminalIcon, Sparkles, Play, Check, CornerDownLeft, Trash2 } from "lucide-react";
-import { PERSONAL_INFO, METRICS, PROJECTS, EXPERIENCES, TECHNOLOGIES } from "@/data/portfolioData";
+import { Terminal as TerminalIcon, CornerDownLeft, Trash2 } from "lucide-react";
+import { METRICS, PROJECTS } from "@/data/portfolioData";
 import { playMicroClick, playCelebrationSound } from "@/lib/sound";
 import confetti from "canvas-confetti";
 

@@ -1,18 +1,12 @@
 "use client";
 
 import React from "react";
-import { ArrowUp, Package, Heart, Sparkles } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 import { GithubIcon, LinkedinIcon, NpmIcon } from "./Icons";
 import { PERSONAL_INFO } from "@/data/portfolioData";
 import { playMicroClick } from "@/lib/sound";
 
 export default function Footer() {
-  const [year, setYear] = React.useState(2026);
-
-  React.useEffect(() => {
-    setYear(new Date().getFullYear());
-  }, []);
-
   const scrollToTop = () => {
     playMicroClick();
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -72,7 +66,7 @@ export default function Footer() {
 
         {/* Back to top */}
         <div className="flex items-center gap-4">
-          <span>© {year} Abinash Swain. Built with Next.js & TypeScript.</span>
+          <span>© 2026 Abinash Swain. Built with Next.js & TypeScript.</span>
           <button
             onClick={scrollToTop}
             className="p-2 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)] hover:border-[var(--color-primary)] hover:text-[var(--color-text)] transition-colors"

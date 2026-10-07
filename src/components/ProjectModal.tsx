@@ -7,8 +7,6 @@ import {
   ExternalLink,
   Play,
   Apple,
-  Package,
-  Layers,
   ShieldAlert,
   Zap,
   CheckCircle2,

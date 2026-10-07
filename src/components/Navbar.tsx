@@ -11,7 +11,6 @@ import {
   Menu,
   X,
   Sparkles,
-  ArrowUpRight,
   Check,
 } from "lucide-react";
 import { useTheme } from "@/context/ThemeContext";
@@ -43,8 +42,6 @@ export default function Navbar({ onOpenCommandPalette, onOpenResume }: NavbarPro
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    setSoundOn(isSoundEnabled());
-
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
 

@@ -28,7 +28,6 @@ import {
   Activity,
   ShieldAlert,
   Search,
-  Filter,
 } from "lucide-react";
 import { TECHNOLOGIES } from "@/data/portfolioData";
 import { TechCategory, TechItem } from "@/types/portfolio";

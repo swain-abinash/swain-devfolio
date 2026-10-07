@@ -3,13 +3,12 @@
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { Sparkles, ShieldCheck, CheckCircle2, Clock, Zap } from "lucide-react";
+import { Clock, Zap } from "lucide-react";
 import { PERSONAL_INFO } from "@/data/portfolioData";
 import { playMicroClick } from "@/lib/sound";
 
 export default function InteractiveProfileCard() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [isHovered, setIsHovered] = useState(false);
   const [istTime, setIstTime] = useState("");
 
   // Live IST Clock
@@ -49,7 +48,6 @@ export default function InteractiveProfileCard() {
   };
 
   const handleMouseLeave = () => {
-    setIsHovered(false);
     mouseX.set(0);
     mouseY.set(0);
   };
@@ -59,7 +57,6 @@ export default function InteractiveProfileCard() {
       ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseEnter={() => {
-        setIsHovered(true);
         playMicroClick();
       }}
       onMouseLeave={handleMouseLeave}

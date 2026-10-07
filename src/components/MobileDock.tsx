@@ -7,7 +7,6 @@ import {
   Layers,
   FileDown,
   MessageSquare,
-  Sparkles,
 } from "lucide-react";
 import { playMicroClick } from "@/lib/sound";
 

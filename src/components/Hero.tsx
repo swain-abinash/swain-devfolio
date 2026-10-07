@@ -8,10 +8,6 @@ import {
   FileDown,
   MessageSquare,
   Terminal as TerminalIcon,
-  ShieldCheck,
-  Zap,
-  Activity,
-  Layers,
   ChevronRight,
 } from "lucide-react";
 import { GithubIcon, LinkedinIcon, NpmIcon } from "./Icons";

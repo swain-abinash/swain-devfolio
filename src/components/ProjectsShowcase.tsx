@@ -3,14 +3,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
-  FolderGit2,
   ExternalLink,
   Play,
-  Apple,
-  Package,
-  Layers,
   Sparkles,
-  ArrowUpRight,
   Info,
 } from "lucide-react";
 import { GithubIcon, NpmIcon } from "./Icons";

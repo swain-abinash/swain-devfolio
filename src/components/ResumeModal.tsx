@@ -16,13 +16,11 @@ import {
   Phone,
   Mail,
   MapPin,
-  Globe,
   Layers,
   CheckCircle2,
 } from "lucide-react";
-import { PERSONAL_INFO, EXPERIENCES, PROJECTS, EDUCATION, CERTIFICATIONS, LANGUAGES } from "@/data/portfolioData";
+import { PERSONAL_INFO, EXPERIENCES, PROJECTS, EDUCATION, CERTIFICATIONS } from "@/data/portfolioData";
 import { playMicroClick, playCelebrationSound } from "@/lib/sound";
-import { GithubIcon, LinkedinIcon, NpmIcon } from "./Icons";
 import confetti from "canvas-confetti";
 
 interface ResumeModalProps {
